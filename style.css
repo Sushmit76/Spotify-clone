@@ -69,13 +69,13 @@ div .look{
   }  
 .container{
     color: white;
-    min-height: 80vh;
+    min-height: 10vh;
     /* background-image: url('background.jpg'); */
     /* background-image: url('photo.jpg'); */
-    background-image: url('background4.jpg');
+    background-image: url('baggy.jpg');
     margin: 4px 0px;
     width: 100%;
-    padding: 20px; 
+    padding: 1px;
 }
 .bottom{
     position: sticky;
