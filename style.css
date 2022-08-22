@@ -17,6 +17,7 @@ nav img{
 nav ul{
     top: 0;
     display: flex;
+    background-image: url('background3.jpg');
     background-color: black;
     color: white;
     align-items: center;
@@ -24,15 +25,12 @@ nav ul{
     list-style-type: none;
     font-weight: bolder;
     height: 80px;
-
 }
 nav ul a{
   color: white;
   font-family: 'Noto Sans', sans-serif;
   font-weight: bolder;
   text-decoration: none;
-
-
 }
 div .look{
     width: 35px;
@@ -49,7 +47,7 @@ div .look{
     display: none;
     font-family: 'Noto Sans', sans-serif;
     position: absolute;
-    width: 100px;
+    width: 120px;
     overflow: auto;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
   }
@@ -58,6 +56,7 @@ div .look{
   }
   .dropdown-content a {
     display: block;
+    background-image: url('background2.webp');
     background-color: black;
     color: white;
     padding: 5px;
@@ -71,21 +70,18 @@ div .look{
 .container{
     color: white;
     min-height: 80vh;
-    background-image: url('background.jpg');
+    /* background-image: url('background.jpg'); */
     /* background-image: url('photo.jpg'); */
-    margin: 4px auto;
+    background-image: url('background4.jpg');
+    margin: 4px 0px;
     width: 100%;
-    padding: 20px;
-
-
-    
+    padding: 20px; 
 }
-
-
 .bottom{
     position: sticky;
     height: 130px;
-    background-color: black;
+    background-image: url('music3.webp');
+    /* background-color: black; */
     color: white;
     bottom: 0;
     display: flex;
@@ -99,4 +95,33 @@ div .look{
 #durationbar{
     width: 30vw;
     
+}
+.songlists{
+  display: flex;
+  background-image: url('spotifylove.jpg'); 
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 10px 100px;
+  height: 120px;
+}
+.recently{
+  display: flex;
+  background-image: url('spotifylove.jpg'); 
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 140px 100px;
+  height: 120px;
+}
+.evergreen{
+  display: flex;
+  color: white;
+  text-decoration: none;
+  background-image: url('spotifylove.jpg'); 
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 140px 100px;
+  height: 120px;
 }
