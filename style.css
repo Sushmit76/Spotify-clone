@@ -92,9 +92,17 @@ div .look{
 .icons{
   margin: 20px 0;
 }
+.icons i{
+  cursor: pointer;
+}
 #durationbar{
     width: 30vw;
+    cursor: pointer;
     
+}
+#volume{
+  width: 5vw;
+  cursor: pointer;
 }
 .songlists{
   display: flex;
