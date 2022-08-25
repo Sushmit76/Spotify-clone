@@ -104,6 +104,9 @@ div .look{
   width: 5vw;
   cursor: pointer;
 }
+#sound{
+  cursor: pointer;
+}
 .songlists{
   display: flex;
   background-image: url('spotifylove.jpg'); 
