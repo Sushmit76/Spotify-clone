@@ -1,9 +1,11 @@
 console.log("Hello");
 
-let songIndex = 0;
-let audioVolume = 0;
-let audioElement=new Audio('/songs/Kun Faya Kun.mp3');
+let songIndex = 1;
+// let audioVolume = 0;
+let audioElement=new Audio('/songs/1.mp3');
 let Play=document.getElementById('Play');
+let Previous=document.getElementById('Previous');
+let Next=document.getElementById('Next');
 let durationbar=document.getElementById('durationbar');
 let volume=document.getElementById('volume');
 let sound=document.getElementById('sound');
@@ -11,18 +13,14 @@ let sound=document.getElementById('sound');
 // let songlists = Array.from(document.getElementsByClassName('songlists'));
 
 let songs = [
-    {songName: "Kun Faya Kun", filePath: "/Spotify clone/songs/Kun Faya Kun.mp3",coverPath: "/spotify clone/cover1.jpg"},
-    {songName: "Haan Main Galat", filePath: "/Spotify clone/songs/Haan Main Galat.mp3",coverPath: "/spotify clone/cover2.webp"},
-    {songName: "Humraah", filePath: "/Spotify clone/songs/Humraah.mp3",coverPath: "/spotify clone/cover3.webp"},
-    {songName: "Yaar Mod Do", filePath: "/Spotify clone/songs/Yaar Mod Do.mp3",coverPath: "/spotify clone/cover5.jpg"},
-    {songName: "Despacito", filePath: "/Spotify clone/songs/despacito.mp3",coverPath: "/spotify clone/cover6.jpg"},
+    {songName: "Kun Faya Kun", filePath: "/Spotify clone/songs/4.mp3",coverPath: "/spotify clone/cover1.jpg"},
+    {songName: "Haan Main Galat", filePath: "/Spotify clone/songs/2.mp3",coverPath: "/spotify clone/cover2.webp"},
+    {songName: "Humraah", filePath: "/Spotify clone/songs/3.pm3",coverPath: "/spotify clone/cover3.webp"},
+    {songName: "Yaar Mod Do", filePath: "/Spotify clone/songs/5.mp3",coverPath: "/spotify clone/cover5.jpg"},
+    {songName: "Despacito", filePath: "/Spotify clone/songs/1.mp3",coverPath: "/spotify clone/cover6.jpg"},
 
 
 ]
-// songlists.forEach((element, i)=>{ 
-//     element.getElementsByTagName("img")[0].src = songs[i].coverPath; 
-//     element.getElementsByClassName("songName")[0].innerText = songs[i].songName; 
-// })
 
 // for play and pause
 Play.addEventListener('click' , ()=>{
@@ -40,6 +38,33 @@ Play.addEventListener('click' , ()=>{
         Play.classList.add('fa-circle-play');
     }
 
+})
+// for next button
+Next.addEventListener('click' , ()=>{
+    if(songIndex>=5){
+        songIndex=1;
+
+    }
+    else{
+        songIndex+=1;
+        
+    }
+    audioElement.src=`/songs/${songIndex}.mp3`;
+    audioElement.play();
+})
+
+// for previous button
+Previous.addEventListener('click' , ()=>{
+    if(songIndex<=1){
+        songIndex=5;
+        
+    }
+    else{
+        songIndex-=1;
+        
+    }
+    audioElement.src=`/songs/${songIndex}.mp3`;
+    audioElement.play();
 })
 
 // for duration bar
