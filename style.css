@@ -1,115 +1,158 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Noto+Sans:wght@300&display=swap');
-body{
+
+body {
   background-color: whitesmoke;
 }
-*{
-    margin: 0;
-    padding: 0;
-}
-nav{
-    font-family: 'Noto Sans', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-nav img{
-    object-fit: contain;
+nav {
+  font-family: 'Noto Sans', sans-serif;
+  width: 100%;
 }
-nav ul{
-    top: 0;
-    display: flex;
-    background-image: url('background3.jpg');
-    background-color: black;
-    color: white;
-    align-items: center;
-    justify-content: space-evenly;
-    list-style-type: none;
-    font-weight: bolder;
-    height: 80px;
+
+nav img {
+  object-fit: contain;
 }
-nav ul a{
+
+nav ul {
+  top: 0;
+  display: flex;
+  background-image: url('background3.jpg');
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  font-weight: bolder;
+  height: 80px;
+
+}
+
+nav ul a {
   color: white;
   font-family: 'Noto Sans', sans-serif;
   font-weight: bolder;
   text-decoration: none;
 }
-div .look{
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    color: white;
-    margin: 6px 0;
-  }
-  .dropdown {
-    display: inline-block;
-    position: relative;
-  }
-  .dropdown-content {
-    display: none;
-    font-family: 'Noto Sans', sans-serif;
-    position: absolute;
-    width: 120px;
-    overflow: auto;
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-  }
-  .dropdown:hover .dropdown-content {
-    display: inline-block;
-  }
-  .dropdown-content a {
-    display: block;
-    background-image: url('background2.webp');
-    background-color: black;
-    color: white;
-    padding: 5px;
-    padding-right: 90px;
-    text-decoration: none;
-  }
-  .dropdown-content a:hover {
-    color: white;
-    background-color:black;
-  }  
-.container{
-    color: white;
-    min-height: 10vh;
-    /* background-image: url('background.jpg'); */
-    /* background-image: url('photo.jpg'); */
-    background-image: url('baggy.jpg');
-    margin: 3px 0;
-    width: 100%;
-    padding: 1px;
+
+div .look {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  color: white;
+  margin: 6px 0;
 }
-.bottom{
-    position: sticky;
-    height: 120px;
-    background-image: url('music3.webp');
-    /* background-color: black; */
-    color: white;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
+.dropdown {
+  display: inline-block;
+  position: relative;
 }
-.icons{
+
+.dropdown-content {
+  display: none;
+  font-family: 'Noto Sans', sans-serif;
+  position: absolute;
+  width: 120px;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+}
+
+.dropdown-content a {
+  display: block;
+  background-image: url('background2.webp');
+  background-color: black;
+  color: white;
+  padding: 5px;
+  padding-right: 90px;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  color: white;
+  background-color: black;
+}
+
+.container {
+  color: white;
+  min-height: 10vh;
+  /* background-image: url('background.jpg'); */
+  /* background-image: url('photo.jpg'); */
+  background-image: url('baggy.jpg');
+  margin: 3px 0;
+  width: 100%;
+  padding: 1px;
+}
+
+.bottom {
+  position: sticky;
+  height: 120px;
+  background-image: url('music3.webp');
+  /* background-color: black; */
+  color: white;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icons {
   margin: 20px 0;
 }
-.icons i{
+
+.icons i {
   cursor: pointer;
 }
-#durationbar{
-    width: 30vw;
-    cursor: pointer;
-    
+
+#durationbar {
+  width: 21vw;
+  cursor: pointer;
+  margin-left: 70px;
+
 }
-#volume{
+
+.duration{
+  display: flex;
+  justify-content: space-around;
+  flex-direction:end;
+  margin-left: 40px;
+  
+}
+#volume {
   width: 5vw;
   cursor: pointer;
+  margin-left: 2px;
 }
-#sound{
+
+#sound {
   cursor: pointer;
+  margin-left: 20px;
 }
-.songlists{
+
+.zoom {
+  padding: auto;
+  transition: transform .1s; /* Animation */
+  /* width: 200px; */
+  /* height: 114px; */
+  margin: 0 auto;
+  width: 100%;
+}
+
+.zoom:hover {
+  transform: scale(1.5); 
+}
+.songlists {
   display: flex;
-  background-image: url('spotifylove.jpg'); 
+  background-image: url('spotifylove.jpg');
   align-items: center;
   justify-content: space-evenly;
   list-style-type: none;
@@ -117,20 +160,22 @@ div .look{
   height: 120px;
 
 }
-.recently{
+
+.recently {
   display: flex;
-  background-image: url('spotifylove.jpg'); 
+  background-image: url('spotifylove.jpg');
   align-items: center;
   justify-content: space-evenly;
   list-style-type: none;
   margin: 140px 90px;
   height: 120px;
 }
-.evergreen{
+
+.evergreen {
   display: flex;
   color: white;
   text-decoration: none;
-  background-image: url('spotifylove.jpg'); 
+  background-image: url('spotifylove.jpg');
   align-items: center;
   justify-content: space-evenly;
   list-style-type: none;
