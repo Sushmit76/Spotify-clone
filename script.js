@@ -93,25 +93,21 @@ Shuff.addEventListener('click' ,()=>{
     // console.log(rndInt);
 })
 // for repeat
-Rept.addEventListener('click' ,()=>{
-    // audioElement.
-    if (typeof myAudio.loop == 'boolean')
-    {
-        myAudio.loop = true;
-    }
-    else
-    {
-        myAudio.addEventListener('ended', function() {
-            this.currentTime = 0;
-            this.play();
-        }, false);
-    }
-    myAudio.play();
-
-
-
-
-})
+// Rept.addEventListener('click' ,()=>{
+//     // audioElement.
+//     if (typeof myAudio.loop == 'boolean')
+//     {
+//         myAudio.loop = true;
+//     }
+//     else
+//     {
+//         myAudio.addEventListener('ended', function() {
+//             this.currentTime = 0;
+//             this.play();
+//         }, false);
+//     }
+//     myAudio.play();
+// })
 // for duration bar
 audioElement.addEventListener('timeupdate', ()=>{
     progress=parseInt((audioElement.currentTime/audioElement.duration) * 100);
@@ -124,18 +120,18 @@ durationbar.addEventListener('change', ()=>{
 })
 
 // for sound bar
-sound.addEventListener('click' , ()=>{
-    if(audioVolume<=0){
+// sound.addEventListener('click' , ()=>{
+//     if(audioVolume<=0){
         
-        sound.classList.remove('fa-volume-high');
-        sound.classList.add('fa-volume-xmark');
+//         sound.classList.remove('fa-volume-high');
+//         sound.classList.add('fa-volume-xmark');
 
-    }
-    else{        
-        sound.classList.remove('fa-volume-xmark');
-        sound.classList.add('fa-volume-high');
-    }
-})
+//     }
+//     else{        
+//         sound.classList.remove('fa-volume-xmark');
+//         sound.classList.add('fa-volume-high');
+//     }
+// })
 
 // volume.addEventListener('change' , ()=>{
     
